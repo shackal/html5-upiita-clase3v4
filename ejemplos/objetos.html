@@ -3,8 +3,50 @@
         <title>JavaScript</title>
         <meta charset="UTF-8"/>
         <script>
-                                    
+                //definicion de un objeto
+                var persona = new Object();
+                persona .nombre= "Isaac";
+                persona.edad=10;
+                persona.hablar= function(){
+                	
+                	alert("Buenaos dias");
+                };
+                
+              // persona.hablar();   
+              //alert(persona.nombre);     
+              
+              //otra forma de crear un objeto con jason(javascript object notation)  
+              var gato= {
+              	nombre: "Misfus",
+              	raza: "siames",
+              	maullar: function(){
+              		alert("miau, miau");
+              	},
+              	comer: function(){
+              		alert("nom, ñom");
+              	}
+              	
+              };   
+              //agregar un nuevio atributo
+              gato.edad=4;
+              //cambio del valor de atributo
+              gato.nombre="Felix";
+              
+              
+              gato.maullar();  
+              //objeto vacio
+              var perro={};
+              perro.nombre="Solovino";
+              perro.ladrar=function(){
+              	alert("guau guau");
+              };
+              
+        
+                         
         </script>
     </head>
-    <body></body>
+    <body>
+    	
+    	
+    </body>
 </html>

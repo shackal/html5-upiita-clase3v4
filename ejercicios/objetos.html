@@ -4,7 +4,20 @@
         <meta charset="UTF-8" />
         <title>Objetos</title>
         <script>
-
+     
+             
+             var usuario={};
+             usuario.nombre=prompt("Como te llamas?"); 
+             usuario.apellido= prompt("Cual es tu Apellido: "); 
+             usuario.edad= prompt("Cual es tu edad: ");
+             
+             var usuariomuestraDatos= function(persona){
+              	alert("Nombre:"+usuario.nombre+" " +usuario.apellido+" "+ usuario.edad);
+              };
+              
+             usuariomuestraDatos(usuario);
+             
+                       
         </script>
     </head>
     <body>
