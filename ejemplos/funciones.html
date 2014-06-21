@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8"/>
+        <script>
+			//funcion
+			function saludar(nombre) {
+				alert("Buenos dias " + nombre);
+				return 0;
+			}
+
+			//llamo a la funcion
+			//var numero = saludar("Daniela");
+
+			//funcion anonima (lamdas)
+			var c = 0;
+			
+			var sumar = function(a, b) {
+				var c = a + b;
+				return c;
+			};
+            
+			var multiplicar = function(a, b) {
+				var c = a * b;
+				return c;
+			};
+
+            var num1 =2;
+            var num2 =5;
+			var suma = sumar(num1, num2);
+			var multiplicacion = multiplicar(2, 5);
+			
+            document.write("<h1>EL VALOR DE C es " + c);
+			document.write("<h2>SUMA " + suma + "</h2>");
+			document.write("<h2>MULTIPLICACION " + multiplicacion + "</h2>");
+
+			//una funcion como argumento
+			//sepuede definir ahi mismo
+			//una funcion dentro de una funcion  closures
+			var operacion = function(unaFuncion){
+			    var resultado = unaFuncion(3,4);
+			    alert("El resultado es " + resultado);
+			};
+			
+			operacion(multiplicar);
+			
+			operacion(function(a, b){
+			    var c = a - b;
+			    return c;
+			});
+			
+			//CLOSURE - autoejecutables
+			( function(){
+			    var sumar = function(){
+			        document.write("soy la funcion1");
+			    };
+			    var c = 5;
+			    
+			    //sumar();
+			} )();
+			
+
+        </script>
+    </head>
+    <body></body>
+</html>
